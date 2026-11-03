@@ -4,3 +4,6 @@ plugins:
 
 gem "github-pages", group: :jekyll_plugins
 
+github:
+  zip_url : http://example.com/download.zip
+  my_url: another value
