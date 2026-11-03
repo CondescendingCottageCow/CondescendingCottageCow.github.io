@@ -1,1 +1,5 @@
-theme: slate
+remote_theme: pages-themes/slate@v0.2
+plugins:
+- jekyll-remote-theme
+
+gem "github-pages", group:jekyll_plugins
