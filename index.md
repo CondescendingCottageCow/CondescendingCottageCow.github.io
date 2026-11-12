@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html>
 <head>
 <title> Oscar’s Portfolio </title>
 </head>
@@ -10,3 +12,4 @@
     <p> Text </p>
   </main>
 </body>
+</html>
