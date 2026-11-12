@@ -23,7 +23,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+<section class="hero">
         <div class="container">
             <h2>Systems & Industrial Engineering Portfolio</h2>
             <p>Showcasing engineering systems, CAD modeling, automated prototypes, and design work.</p>
