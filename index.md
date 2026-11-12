@@ -9,7 +9,7 @@
     <h1> Welcome to my Portfolio </h1>
   </header>
   <main>
-    <p> Text </p>
+    <p> some upstanding comment about myself </p>
   </main>
 </body>
 </html>
