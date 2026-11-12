@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oscar Cao | Portfolio</title>
+    <title> Oscar Cao | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,7 +22,7 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+<!-- Hero Section -->
 <section class="hero">
         <div class="container">
             <h2>Systems & Industrial Engineering Portfolio</h2>
@@ -31,28 +31,28 @@
         </div>
     </section>
 
-    <main class="container">
+<main class="container">
 
-        <!-- Projects Section (Scalable Grid) -->
-        <section id="projects" class="content-section">
-            <h2>Projects</h2>
-            <div class="card-grid">
+<!-- Projects Section (Scalable Grid) -->
+<section id="projects" class="content-section">
+<h2>Projects</h2>
+<div class="card-grid">
                 <!-- Project Card 1 -->
-                <article class="card">
-                    <img src="placeholder-project1.jpg" alt="Project preview" class="card-img">
-                    <div class="card-body">
-                        <h3>Autonomous Vehicle Subassembly</h3>
-                        <p>High-precision structural components built using aluminum and automated prototyping.</p>
+<article class="card">
+<img src="placeholder-project1.jpg" alt="Project preview" class="card-img">
+<div class="card-body">
+<h3>Autonomous Vehicle Subassembly</h3>
+<p>High-precision structural components built using aluminum and automated prototyping.</p>
                         <a href="https://github.com/CondescendingCottageCow" target="_blank" class="card-link">View on GitHub →</a>
                     </div>
                 </article>
 
-                <!-- Project Card 2 -->
-                <article class="card">
-                    <img src="placeholder-project2.jpg" alt="Project preview" class="card-img">
-                    <div class="card-body">
-                        <h3>Discrete-Event Simulation</h3>
-                        <p>Systems engineering value-stream simulation architecture tracking lifecycle assembly flows.</p>
+     <!-- Project Card 2 -->
+<article class="card">
+<img src="placeholder-project2.jpg" alt="Project preview" class="card-img">
+<div class="card-body">
+<h3>Discrete-Event Simulation</h3>
+<p>Systems engineering value-stream simulation architecture tracking lifecycle assembly flows.</p>
                         <a href="https://github.com/CondescendingCottageCow" target="_blank" class="card-link">View on GitHub →</a>
                     </div>
                 </article>
@@ -60,12 +60,12 @@
         </section>
 
         <!-- Modeling Parts Section -->
-        <section id="modeling" class="content-section">
-            <h2>3D Models & Parts</h2>
-            <p class="section-desc">Dimensioning drawings, SolidWorks subassemblies, and mechanical renders.</p>
+<section id="modeling" class="content-section">
+<h2>3D Models & Parts</h2>
+<p class="section-desc">Dimensioning drawings, SolidWorks subassemblies, and mechanical renders.</p>
             <div class="card-grid">
                 <!-- Model Card 1 -->
-                <article class="card">
+ <article class="card">
                     <div class="model-placeholder">[ 3D Model Viewer / Render ]</div>
                     <div class="card-body">
                         <h3>Mechanical Subassembly Part A</h3>
@@ -74,7 +74,7 @@
                 </article>
 
                 <!-- Model Card 2 -->
-                <article class="card">
+<article class="card">
                     <div class="model-placeholder">[ 3D Model Viewer / Render ]</div>
                     <div class="card-body">
                         <h3>Sensor Housing Bracket</h3>
@@ -85,7 +85,7 @@
         </section>
 
         <!-- Image Gallery Section -->
-        <section id="gallery" class="content-section">
+<section id="gallery" class="content-section">
             <h2>Image Gallery</h2>
             <div class="gallery-grid">
                 <img src="placeholder-gallery1.jpg" alt="Gallery item" class="gallery-img">
@@ -97,7 +97,7 @@
     </main>
 
     <!-- Footer -->
-    <footer id="contact" class="site-footer">
+<footer id="contact" class="site-footer">
         <div class="container">
             <h3>Get In Touch</h3>
             <p>Interested in collaborating or discussing engineering systems?</p>
