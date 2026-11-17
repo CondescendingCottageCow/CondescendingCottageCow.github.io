@@ -1,38 +1,34 @@
-/* Integrated Showcase Row Layout */
-.showcase-row {
-    display: flex;
-    align-items: center;
-    gap: 8rem;
+/* Full-Width Immersive Showcase Container */
+.full-width-showcase {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
     margin-top: 3rem;
-    padding-bottom: 3rem;
-    border-bottom: 1px solid #f1f5f9;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.02), 0 2px 4px -2px rgba(0, 0, 0, 0.02);
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
 }
 
-.showcase-row:last-child {
-    border-bottom: none;
-    padding-bottom: 0;
+.full-width-showcase:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 25px -5px rgba(15, 23, 42, 0.08), 0 8px 10px -6px rgba(15, 23, 42, 0.08);
 }
 
-/* Alternates image/text sides for visual flow */
-.showcase-row.reversed {
-    flex-direction: row-reverse;
+.showcase-info {
+    padding: 2rem 2.5rem 1.5rem 2.5rem;
 }
 
-.showcase-text {
-    flex: 1;
-}
-
-.showcase-text h3 {
-    font-size: 1.5rem;
+.showcase-info h3 {
+    font-size: 1.6rem;
     color: #0f172a;
-    margin-bottom: 0.75rem;
+    margin-bottom: 0.5rem;
 }
 
-.showcase-text p {
+.showcase-info p {
     color: #475569;
     font-size: 1.05rem;
-    line-height: 1.7;
-    margin-bottom: 1.25rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
 }
 
 .inline-link {
@@ -49,45 +45,26 @@
     transform: translateX(4px);
 }
 
-.showcase-media {
-    flex: 1.2;
-}
-
-.showcase-img,
-.model-placeholder {
+/* Full-Width Media Element */
+.showcase-media-full {
     width: 100%;
-    height: 280px;
-    border-radius: 8px;
+}
+
+.full-width-img,
+.model-placeholder-full {
+    width: 100%;
+    height: 380px;
     object-fit: cover;
+    display: block;
     background: #f8fafc;
-    border: 1px solid #e2e8f0;
-    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease;
+    border-top: 1px solid #f1f5f9;
 }
 
-.showcase-img:hover,
-.model-placeholder:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 12px 24px -8px rgba(15, 23, 42, 0.12);
-}
-
-.model-placeholder {
+.model-placeholder-full {
     display: flex;
     align-items: center;
     justify-content: center;
     color: #64748b;
     font-weight: 500;
-    font-size: 0.95rem;
-}
-
-/* Mobile Responsive Collapse */
-@media (max-width: 768px) {
-    .showcase-row,
-    .showcase-row.reversed {
-        flex-direction: column;
-        gap: 1.5rem;
-    }
-
-    .showcase-media {
-        width: 100%;
-    }
+    font-size: 1rem;
 }
