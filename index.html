@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Oscar Cao | Portfolio</title>
+    <title>Oscar Cao | Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!--Header and navigation -->
-  <header class="site-header">
+    <!-- Header and navigation -->
+    <header class="site-header">
         <div class="container">
-            <h1 class="logo"> Portfolio! </h1>
+            <h1 class="logo">Portfolio!</h1>
             <nav class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="about.html">About</a>
@@ -23,22 +23,21 @@
         </div>
     </header>
 
-    
-<!-- Hero Section -->
-<section class="hero">
+    <!-- Hero Section -->
+    <section class="hero">
         <div class="container">
             <h2>A Showcase</h2>
             <p>Designing, modeling, prototyping, and engineering work.</p>
         </div>
     </section>
 
-<main class="container">
+    <main class="container">
 
-<!-- Projects Section (Integrated Showcase Layout) -->
+        <!-- Projects Section (Full-Width Immersive Showcase) -->
         <section id="projects" class="content-section">
             <h2>Projects</h2>
 
-<!-- Project 1 -->
+            <!-- Project 1 -->
             <article class="full-width-showcase">
                 <div class="showcase-info">
                     <h3>Autonomous Vehicle Subassembly</h3>
@@ -102,9 +101,9 @@
                 </div>
             </article>
         </section>
-    
+
         <!-- Image Gallery Section -->
-<section id="gallery" class="content-section">
+        <section id="gallery" class="content-section">
             <h2>Image Gallery</h2>
             <div class="gallery-grid">
                 <img src="placeholder-gallery1.jpg" alt="Gallery item" class="gallery-img">
@@ -116,7 +115,7 @@
     </main>
 
     <!-- Footer -->
-<footer id="contact" class="site-footer">
+    <footer id="contact" class="site-footer">
         <div class="container">
             <h3>Get In Touch</h3>
             <p>Interested in collaborating or discussing engineering systems?</p>
@@ -128,29 +127,28 @@
     </footer>
 
     <script>
-    document.addEventListener("DOMContentLoaded", function () {
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.15 // Triggers when 15% of the element is visible
-        };
+        document.addEventListener("DOMContentLoaded", function () {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
 
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                    observer.unobserve(entry.target); // Animate only once per load
-                }
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.content-section, .full-width-showcase').forEach(el => {
+                el.classList.add('reveal');
+                observer.observe(el);
             });
-        }, observerOptions);
-
-        // Target sections or cards you want to animate
-        document.querySelectorAll('.content-section, .card').forEach(el => {
-            el.classList.add('reveal');
-            observer.observe(el);
         });
-    });
-</script>
+    </script>
 
 </body>
 </html>
