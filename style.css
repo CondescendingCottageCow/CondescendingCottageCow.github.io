@@ -2,7 +2,7 @@
 .showcase-row {
     display: flex;
     align-items: center;
-    gap: 4rem;
+    gap: 8rem;
     margin-top: 3rem;
     padding-bottom: 3rem;
     border-bottom: 1px solid #f1f5f9;
